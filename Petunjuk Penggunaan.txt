@@ -1,0 +1,33 @@
+## Fitur
+
+Fitur Yang Tersedia Pada Aplikasi Ini:
+- Custom Setting Aplikasi
+- Informasi Pada Saat Absen
+- Sistem Login
+- Export Absen (Support PDF & Excel)
+
+## Server Requirement
+
+> - PHP 7.4.8 [Hanya support untuk versi dibawah PHP 8]
+> - Nginx 1.19.1 Or Apache 2.4.46
+> - MariaDB 10.4.13
+
+## Login Account (Default)
+
+admin
+> - Username: administrator
+> - Password: administrator
+---------------------------
+user/anggota
+> - Username: anas
+> - Password: anasanas
+----------------------
+> - Username: farel
+> - Password: farelfarel
+----------------------
+> - Username: johan
+> - Password: johanjohan
+----------------------
+
+## Cara Mengakses
+> - http://localhost/absensimagang/public/
