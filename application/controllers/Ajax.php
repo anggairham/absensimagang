@@ -20,9 +20,9 @@ class Ajax extends CI_Controller
         $this->appsetting = $this->db->get_where('db_setting', ['status_setting' => 1])->row_array();
         $timezone_all = $this->appsetting;
         date_default_timezone_set($timezone_all['timezone']);
-        // if (!isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-        //     exit('Opss you cannot access this [Hacking Attemp].');
-        // }
+        if (!isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+            exit('Opss you cannot access this [Hacking Attemp].');
+        }
     }
 
     public function clear_rememberme()
@@ -557,7 +557,7 @@ class Ajax extends CI_Controller
                 "recordsFiltered" => $query->num_rows(),
                 "data" => $data
             );
-        } elseif ($dataabsen == 'all' || true) {
+        } elseif ($dataabsen == 'all') {
             if ($this->session->userdata('role_id') == 1) {
 				$sql ="SELECT * FROM(
 					SELECT *,

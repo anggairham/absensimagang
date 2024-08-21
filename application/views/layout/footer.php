@@ -449,7 +449,8 @@
             e.preventDefault();
             load_process();
             $('#listabsenku').DataTable().ajax.reload();
-        });s
+        });
+		
         $('#listabsenku').DataTable({
             "ajax": {
                 url: "<?= base_url('ajax/get_datatbl?type=allself'); ?>",
